@@ -21,7 +21,32 @@ const exportJson = async () => {
   const layerNames = state.layers.names;
   const layers = state.layers.layers;
 
-  exportObject["map"]["layers"] = [];
+  // JvB: Start with an empty floor layer, as required by Workadventu.re
+  exportObject["map"]["layers"] = [
+  {
+         "draworder":"topdown",
+         "id": 0,
+         "name":"floorLayer",
+         "objects":[
+                {
+                 "height":0,
+                 "id":1,
+                 "name":"computer",
+                 "point":true,
+                 "rotation":0,
+                 "type":"computer",
+                 "visible":true,
+                 "width":0,
+                 "x":431.75,
+                 "y":335.25
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+  ];
 
   for (const layerName of layerNames) {
     const layer = layers[layerName];
