@@ -1,7 +1,7 @@
 {
   "name": "textyle",
   "version": "0.1.0",
-  "homepage": "https://textyle.app/edit",
+  "homepage": "https://jbemmel.github.io/textyle/jitsi_at_scale/",
   "private": true,
   "dependencies": {
     "@mdi/js": "^5.8.55",
