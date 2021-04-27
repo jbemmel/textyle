@@ -31,5 +31,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-          TARGET_FOLDER: edit
+          TARGET_FOLDER: jitsi_at_scale
           CLEAN: true
