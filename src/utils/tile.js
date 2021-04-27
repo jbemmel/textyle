@@ -4,10 +4,11 @@ export const getTilePositionOnClick = (e, tileSize, offset) => {
   offset = offset || [0.0, 0.0];
   const bounds = e.target.getBoundingClientRect();
   const w = Math.floor(e.target.width / tileSize[0]);
-  const x = Math.floor((e.pageX + offset[0] - bounds.left) / tileSize[0]);
-  const y = Math.floor((e.pageY + offset[1] - bounds.top) / tileSize[1]);
+  // JvB fixed pageX -> clientX to account for scrolling
+  const x = Math.floor((e.clientX + offset[0] - bounds.left) / tileSize[0]);
+  const y = Math.floor((e.clientY + offset[1] - bounds.top) / tileSize[1]);
   
-  console.log( `JvB: getTilePositionOnClick x=${x} y=${y} window.scrollX=${window.scrollX} window.scrollY=${window.scrollY}` );
+  // console.log( `JvB: getTilePositionOnClick x=${x} y=${y} window.scrollX=${window.scrollX} window.scrollY=${window.scrollY}` );
   
   return [x, y];
 };
