@@ -29,6 +29,7 @@ export const getImageBitmap = async (name) => {
 
 export const dataURLtoFile = (dataurl, filename) => {
   const arr = dataurl.split(",");
+  if (arr.length < 2) console.error( "Unable to read data URL: " + dataurl + " file=" + filename );
   const mime = arr[0].match(/:(.*?);/)[1];
   const bstr = atob(arr[1]);
   let n = bstr.length;
