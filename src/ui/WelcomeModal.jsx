@@ -7,8 +7,8 @@ import TileManagerInstance from "renderer/TileManager";
 import Modal from "ui/common/Modal";
 import Button from "ui/common/Button";
 import Anchor from "ui/common/Anchor";
-// import tilesetSample from "resources/tileset_sample.png";
-import tilesetSample from "resources/tilesets_deviant_milkian_1.png"; // JvB added
+import tilesetSample from "resources/tileset_sample.png";
+// import tilesetSample from "resources/tilesets_deviant_milkian_1.png"; // JvB TODO add
 
 const WelcomeModal = () => {
   const dispatch = useDispatch();
@@ -28,12 +28,12 @@ const WelcomeModal = () => {
   }, []);
 
   const onClose = () => {
-    // const tilesetSampleFile = dataURLtoFile(tilesetSample, "tileset_sample.png");
-    // dispatch(addTileset("Example Tileset", [32, 32], TileManagerInstance.lastId, tilesetSampleFile));
+    const tilesetSampleFile = dataURLtoFile(tilesetSample, "tileset_sample.png");
+    dispatch(addTileset("Example Tileset", [32, 32], TileManagerInstance.lastId, tilesetSampleFile));
 
-    // JvB added
-    const tilesetSampleFile = dataURLtoFile(tilesetSample, "tilesets_deviant_milkian_1.png");
-    dispatch(addTileset("WorkAdventu.re Tileset", [32, 32], TileManagerInstance.lastId, tilesetSampleFile));
+    // JvB TODO add
+    // const tilesetSampleFile = dataURLtoFile(tilesetSample, "tilesets_deviant_milkian_1.png");
+    // dispatch(addTileset("WorkAdventu.re Tileset", [32, 32], TileManagerInstance.lastId, tilesetSampleFile));
    
     dispatch(completeTextureLoading());
     dispatch(displaySidebar(true));
