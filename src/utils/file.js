@@ -41,7 +41,8 @@ export const dataURLtoFile = (dataurl, filename) => {
     }
     return new File([u8arr], filename, { type: mime });
   } else {
-    return new File(dataurl, filename, { type: 'image/png' }); // Only used for PNG tilesets for now
+    const enc = new TextEncoder(); // always utf-8
+    return new File(enc.encode(dataurl), filename, { type: 'image/png' }); // Only used for PNG tilesets for now
   }
 };
 
