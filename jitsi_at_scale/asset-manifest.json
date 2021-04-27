@@ -4,8 +4,8 @@
     "edc975c6934b7acb9794.module.wasm": "/textyle/jitsi_at_scale/edc975c6934b7acb9794.module.wasm",
     "static/js/0.5f9a1336.chunk.js.map": "/textyle/jitsi_at_scale/static/js/0.5f9a1336.chunk.js.map",
     "main.css": "/textyle/jitsi_at_scale/static/css/main.88a0d553.chunk.css",
-    "main.js": "/textyle/jitsi_at_scale/static/js/main.9168a23b.chunk.js",
-    "main.js.map": "/textyle/jitsi_at_scale/static/js/main.9168a23b.chunk.js.map",
+    "main.js": "/textyle/jitsi_at_scale/static/js/main.f530619e.chunk.js",
+    "main.js.map": "/textyle/jitsi_at_scale/static/js/main.f530619e.chunk.js.map",
     "runtime-main.js": "/textyle/jitsi_at_scale/static/js/runtime-main.45f2d8d1.js",
     "runtime-main.js.map": "/textyle/jitsi_at_scale/static/js/runtime-main.45f2d8d1.js.map",
     "static/js/3.a72597f1.chunk.js": "/textyle/jitsi_at_scale/static/js/3.a72597f1.chunk.js",
@@ -15,13 +15,12 @@
     "index.html": "/textyle/jitsi_at_scale/index.html",
     "static/css/main.88a0d553.chunk.css.map": "/textyle/jitsi_at_scale/static/css/main.88a0d553.chunk.css.map",
     "static/js/3.a72597f1.chunk.js.LICENSE.txt": "/textyle/jitsi_at_scale/static/js/3.a72597f1.chunk.js.LICENSE.txt",
-    "static/media/logo.6b22daf5.svg": "/textyle/jitsi_at_scale/static/media/logo.6b22daf5.svg",
-    "static/media/tilesets_deviant_milkian_1.745f0e79.png": "/textyle/jitsi_at_scale/static/media/tilesets_deviant_milkian_1.745f0e79.png"
+    "static/media/logo.6b22daf5.svg": "/textyle/jitsi_at_scale/static/media/logo.6b22daf5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.45f2d8d1.js",
     "static/js/3.a72597f1.chunk.js",
     "static/css/main.88a0d553.chunk.css",
-    "static/js/main.9168a23b.chunk.js"
+    "static/js/main.f530619e.chunk.js"
   ]
 }
